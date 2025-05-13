@@ -56,7 +56,7 @@ let questions = {
   { question: 'What’s the secant of 90°?', answer: 'undefined' },
   { question: 'What is the formula for coterminal angles?', answer: 'θ ± 360n' }
    // Add 95 more
-];
+],
   chem: [
   { question: 'What is the oxidation number of oxygen in H2O?', answer: '-2' },
   { question: 'What is the density of an object with mass 50g and volume 10mL?', answer: '5 g/mL' },
