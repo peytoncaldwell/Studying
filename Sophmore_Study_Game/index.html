@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Game</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <div id="game-container">
+    <button id="toggle-mode" onclick="toggleMode()">🌙 Dark Mode</button>
+    <h1>📚 Study Game</h1>
+
+    <div id="category-select">
+      <h2>Select a Category:</h2>
+      <button onclick="startGame('trig')">Trigonometry</button>
+      <button onclick="startGame('dilations')">Dilations & Similarity</button>
+      <button onclick="startGame('quadratics')">Quadratics</button>
+      <button onclick="startGame('chem')">Chemistry</button>
+    </div>
+
+    <div id="question-area" style="display:none;">
+      <h2 id="category-title"></h2>
+      <p>⏳ Time Left: <span id="time-left">60</span>s</p>
+      <p>✅ Score: <span id="score">0</span></p>
+      <p id="question"></p>
+      <input type="text" id="answer" placeholder="Your Answer">
+      <button onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <div id="end-screen" style="display:none;">
+      <h2>🎉 Game Over!</h2>
+      <p id="final-score"></p>
+      <p id="final-time"></p>
+      <button onclick="location.reload()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
