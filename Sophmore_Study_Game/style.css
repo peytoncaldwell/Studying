@@ -4,6 +4,12 @@
   --button-bg: #f0f0f0;
   --button-text: #000000;
 }
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+}
 
 body {
   background-color: var(--bg-color);
@@ -34,11 +40,4 @@ input {
 #game-container {
   max-width: 600px;
   margin: auto;
-}
-
-.dark-mode {
-  --bg-color: #121212;
-  --text-color: #ffffff;
-  --button-bg: #333333;
-  --button-text: #ffffff;
 }
